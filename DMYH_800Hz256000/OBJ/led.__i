@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\BEEP
+-I C:\Keil_v5\ARM\RV31\INC
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+-I C:\Keil_v5\ARM\Inc\ST\STM32F10x
+-DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
+-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d "..\HARDWARE\LED\led.c"
